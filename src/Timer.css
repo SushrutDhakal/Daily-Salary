@@ -1,0 +1,84 @@
+@keyframes rainAnimation {
+  0% {
+    opacity: .9;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: .5;
+    transform: translateY(50vh);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+
+.dollar-bills-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  justify-content: center; /* Align rows in the center horizontally */
+  align-items: center; /* Align rows in the center vertically */
+  z-index: 1;
+  animation: rainAnimation 4s linear forwards; 
+}
+
+.row {
+  display: flex;
+}
+
+.dollar-bill {
+  font-size: 40px;
+  margin: 2px; /* Adjust as needed for spacing between dollar bills */
+}
+
+
+.container {
+  position: relative; 
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.dollar-bills-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.amount {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:last-child {
+  margin-right: 0;
+}

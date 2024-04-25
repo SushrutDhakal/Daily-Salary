@@ -1,0 +1,30 @@
+/* GetSalary.css */
+.get-salary-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.salary-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
